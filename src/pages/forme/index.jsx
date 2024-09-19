@@ -4,12 +4,12 @@ import React from "react";
 import Head from "next/head";
 
 import useTranslation from "next-translate/useTranslation";
-// import loadTranslation from "next-translate/loadNamespaces";
+ import loadTranslation from "next-translate/loadNamespaces";
 
 
 
-export default function Tattooartists() {
-  const { t } = useTranslation();
+export default function Tattooartists({translations}) {
+  const { t } = useTranslation("common",{i18n:translations});
 
   return (
     <>
@@ -30,26 +30,26 @@ export default function Tattooartists() {
   );
 }
 
-// export const getServerSideProps: GetServerSideProps = async (context) => {
-//   const { locale } = context;
+export const getServerSideProps = async (context) => {
+  const { locale } = context;
 
-//   try {
-//     const translations = await loadTranslation({
-//       locale: locale || "en", // Fallback to "en" if locale is undefined
-//       namespaces: ["common"],
-//     });
+  try {
+    const translations = await loadTranslation({
+      locale: locale || "en", // Fallback to "en" if locale is undefined
+      namespaces: ["common"],
+    });
 
-//     return {
-//       props: {
-//         translations,
-//       },
-//     };
-//   } catch (error) {
-//     console.error(error);
-//     return {
-//       props: {
-//         translations: {},
-//       },
-//     };
-//   }
-// };
+    return {
+      props: {
+        translations,
+      },
+    };
+  } catch (error) {
+    console.error(error);
+    return {
+      props: {
+        translations: {},
+      },
+    };
+  }
+};

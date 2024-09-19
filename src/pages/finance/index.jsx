@@ -5,13 +5,14 @@ import Head from "next/head";
 
 
 
-// import loadTranslation from "next-translate/loadNamespaces";
+ import loadTranslation from "next-translate/loadNamespaces";
 
 import useTranslation from "next-translate/useTranslation";
 
 
-const KlarnaNew = () => {
-  const { t } = useTranslation();
+const KlarnaNew = ({translations}) => {
+  
+  const { t } = useTranslation("commmon" , {i18n:translations});
 
   return (
     <>
@@ -29,26 +30,26 @@ const KlarnaNew = () => {
 };
 export default KlarnaNew;
 
-// export const getServerSideProps: GetServerSideProps = async (context) => {
-//   const { locale } = context;
+export const getServerSideProps = async (context) => {
+  const { locale } = context;
 
-//   try {
-//     const translations = await loadTranslation({
-//       locale: locale || "en", // Fallback to "en" if locale is undefined
-//       namespaces: ["common"],
-//     });
+  try {
+    const translations = await loadTranslation({
+      locale: locale || "en", // Fallback to "en" if locale is undefined
+      namespaces: ["common"],
+    });
 
-//     return {
-//       props: {
-//         translations,
-//       },
-//     };
-//   } catch (error) {
-//     console.error(error);
-//     return {
-//       props: {
-//         translations: {},
-//       },
-//     };
-//   }
-// };
+    return {
+      props: {
+        translations,
+      },
+    };
+  } catch (error) {
+    console.error(error);
+    return {
+      props: {
+        translations: {},
+      },
+    };
+  }
+};

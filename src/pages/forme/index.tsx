@@ -10,6 +10,8 @@ import { useNavigation } from "@/hooks/useRouter";
 import useTranslation from "next-translate/useTranslation";
 import loadTranslation from "next-translate/loadNamespaces";
 
+import CountrySelectorModel from '@/components/sss'
+
 
 export default function Tattooartists({translations}) {
   
@@ -28,6 +30,9 @@ export default function Tattooartists({translations}) {
       
 
       <section className="container_full mt_40 overlap_first">
+
+        <CountrySelectorModel/>
+        
         <div className="row g-0">
           <div className="col-md-6 col-sm-12 col-xs-12 m_order_2">
             <div className="position_relative w_100pc h_100pc artist_mid_img_block block_bg_gray_250">

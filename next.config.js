@@ -17,39 +17,39 @@ module.exports = nextTranslate({
   async rewrites() {
     return [
       {
-        source: "/tattoo-financing",
-        destination: "/tattoo-financing",
+        source: "/finance",
+        destination: "/finance",
       },
       {
         source: "/tattoofinanzierung",
-        destination: "/tattoo-financing",
+        destination: "/finance",
       },
       {
         source: "/financiacion-de-tatuajes",
-        destination: "/tattoo-financing",
+        destination: "/finance",
       },
 
       {
         source: "/finanziamento-dei-tatuaggi",
-        destination: "/tattoo-financing",
+        destination: "/finance",
       },
 
       {
-        source: "/for-tattoo-artists",
-        destination: "/for-tattoo-artists",
+        source: "/forme",
+        destination: "/forme",
       },
       {
         source: "/tattoo-business",
-        destination: "/for-tattoo-artists",
+        destination: "/forme",
       },
       {
         source: "/explorar/negocio-de-tatuajes",
-        destination: "/for-tattoo-artists",
+        destination: "/forme",
       },
 
       { 
         source: "/negozio-di-tatuaggi",
-       destination: "/for-tattoo-artists" 
+       destination: "/forme" 
     },
 
 

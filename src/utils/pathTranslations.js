@@ -1,28 +1,28 @@
 const pathTranslations = {
-    "/tattoo-financing": {
+    "/finance": {
       de: "/tattoofinanzierung",
       es: "/financiacion-de-tatuajes",
-      en: "/tattoo-financing",
+      en: "/finance",
       it: "/finanziamento-dei-tatuaggi",
     },
   
     "/tattoofinanzierung": {
       //de
-      en: "/tattoo-financing",
+      en: "/finance",
       es: "/financiacion-de-tatuajes",
       it: "/finanziamento-dei-tatuaggi",
     },
   
     "/financiacion-de-tatuajes": {
       //es
-      en: "/tattoo-financing",
+      en: "/finance",
       de: "/tattoofinanzierung",
       it: "/finanziamento-dei-tatuaggi",
     },
   
     "/finanziamento-dei-tatuaggi": {
       //it
-      en: "/tattoo-financing",
+      en: "/finance",
       de: "/tattoofinanzierung",
       es: "/financiacion-de-tatuajes",
     },
@@ -55,30 +55,30 @@ const pathTranslations = {
       es: "/contacto",
     },
   
-    "/for-tattoo-artists": {
+    "/forme": {
       de: "/tattoo-business",
       es: "/explorar/negocio-de-tatuajes",
-      en: "/for-tattoo-artists",
+      en: "/forme",
       it: "/negozio-di-tatuaggi",
     },
   
     "/tattoo-business": {
       //de
-      en: "/for-tattoo-artists",
+      en: "/forme",
       es: "/explorar/negocio-de-tatuajes",
       it: "/negozio-di-tatuaggi",
     },
   
     "/explorar/negocio-de-tatuajes": {
       //es
-      en: "/for-tattoo-artists",
+      en: "/forme",
       de: "/tattoo-business",
       it: "/negozio-di-tatuaggi",
     },
   
     "/negozio-di-tatuaggi": {
       //it
-      en: "/for-tattoo-artists",
+      en: "/forme",
       de: "/tattoo-business",
       es: "/explorar/negocio-de-tatuajes",
     },

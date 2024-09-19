@@ -25,9 +25,9 @@
       
     },
     "routes": {
-      "klarna": "tattoo-financing",
+      "klarna": "finance",
       "contact": "contact",
-      "for-tattoo-artists": "for-tattoo-artists",
+      "for-tattoo-artists": "forme",
       "tattoo-request": "tattoo-request",
       "tattoo-request-form": "tattoo-request-form",
       "tattoo-artists": "explore/tattoo-artists",

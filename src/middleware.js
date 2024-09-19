@@ -12,12 +12,7 @@ export async function middleware(request) {
       req: request,
       secret: process.env.NEXTAUTH_SECRET,
     });
-    //check not logged in
-    if (!token) {
-     const url=  new URL(`/analytics/login`, request.url);
-      
-      return NextResponse.redirect(url);
-    }
+
   }
   
   return res;

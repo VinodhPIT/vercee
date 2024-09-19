@@ -9,11 +9,8 @@ import Head from "next/head";
 
 import useTranslation from "next-translate/useTranslation";
 
-interface KlarnaNewProps {
-  translations: '';
-}
 
-const KlarnaNew: React.FC<KlarnaNewProps> = () => {
+const KlarnaNew = () => {
   const { t } = useTranslation();
 
   return (

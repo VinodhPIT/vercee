@@ -21,6 +21,10 @@ export default function Tattooartists() {
        
 
         <p>{t("common:testme.content1")}</p>
+
+
+
+        
       </section>
     </>
   );

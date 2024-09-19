@@ -10,29 +10,20 @@ import countriesData from "@/data/countries.json";
 
 import UsePathTranslation from "@/hooks/usePathTranslation";
 
-interface Country {
-  id: number;
-  country: string;
-  language: string;
-  image: string;
-  countryCode: string;
-  lng: string;
-  set: string;
- 
-}
+
 
 
 const CountrySelectorModel = () => {
   const router = useRouter();
-  const [country, setCountry] = useState<Country[]>([]); // Define the state with the Country type
+  const [country, setCountry] = useState([]); // Define the state with the Country type
 
   const { t } = useTranslation();
 
   useEffect(() => {
-    setCountry(countriesData as Country[]); 
+    setCountry(countriesData); 
   }, []);
 
-  const chooseLanguage = async (countryCode: string, lng: string) => {
+  const chooseLanguage = async (countryCode, lng) => {
     const newLocale = `${countryCode}-${lng}`;
     await setLanguage(newLocale);
 

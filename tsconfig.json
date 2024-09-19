@@ -16,6 +16,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/sss.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/sss.jsx", "src/pages/forme/index.jsx", "src/pages/finance/index.jsx", "src/pages/_app.jsx", "src/pages/_document.jsx", "src/pages/index.jsx"],
   "exclude": ["node_modules"]
 }

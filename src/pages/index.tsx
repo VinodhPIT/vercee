@@ -75,8 +75,7 @@ const CountrySelectorModel = ({ isOpen, closeModal }) => {
                   alt="close"
                 />
               </button>
-              <h3>{t("common:Choose your region and language")}</h3>
-              <p>{t("common:LanguagePopup-subText")}</p>
+            
               <div
                 className="language_popup_block">
                 <ul>

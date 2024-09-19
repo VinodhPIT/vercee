@@ -3,7 +3,7 @@ import React from "react";
 
 import Head from "next/head";
 
-import CountrySelectorModel from "@/components/sss";
+
 
 // import loadTranslation from "next-translate/loadNamespaces";
 
@@ -23,7 +23,7 @@ const KlarnaNew: React.FC<KlarnaNewProps> = () => {
       </Head>
 
       <section className="container_full pt_40 pb_40 m_pb_20">
-        <CountrySelectorModel />
+        
 
         <p>{t("common:testme.content1")}</p>
       </section>

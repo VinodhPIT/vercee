@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import type { AppProps } from "next/app";
  
-
+import CountrySelectorModel from "@/components/sss";
 import "@/styles/globals.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -26,6 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
 
       <div>
+      <CountrySelectorModel />
         <Component {...pageProps} />
       </div>
     </>

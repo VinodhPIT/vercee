@@ -6,7 +6,7 @@ import Head from "next/head";
 import useTranslation from "next-translate/useTranslation";
 // import loadTranslation from "next-translate/loadNamespaces";
 
-import CountrySelectorModel from "@/components/sss";
+
 
 export default function Tattooartists() {
   const { t } = useTranslation();
@@ -18,7 +18,7 @@ export default function Tattooartists() {
       </Head>
 
       <section className="container_full mt_40 overlap_first">
-        <CountrySelectorModel />
+       
 
         <p>{t("common:testme.content1")}</p>
       </section>

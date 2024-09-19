@@ -1,0 +1,24 @@
+
+[
+    {
+      "id": 1,
+      "country": "Austria",
+      "language": "English",
+      "image": "/austria.svg",
+      "countryCode": "at",
+      "lng": "en",
+      "set": "at-en"
+    },
+  
+    {
+      "id": 2,
+      "country": "Österreich",
+      "language": "Deutsch",
+      "image": "/austria.svg",
+      "countryCode": "at",
+      "lng": "de",
+      "set": "at-de"
+    }
+  
+    
+  ]

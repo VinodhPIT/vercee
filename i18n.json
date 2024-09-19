@@ -1,0 +1,17 @@
+{
+    "locales": [
+      "at-en",
+      "at-de"
+     
+    ],
+    "defaultLocale": "at-en",
+    
+    "pages": {
+      "*": ["common"],
+      "/": ["home"],
+      "/about": ["about"]
+    }
+    
+    
+  }
+  

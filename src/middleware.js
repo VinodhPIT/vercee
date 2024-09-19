@@ -20,11 +20,7 @@ export async function middleware(request) {
     });
 
     // If no token is found, redirect to the login page
-    if (!token) {
-      console.log(`No token found. Redirecting to login.`);
-      const url = new URL(`/analytics/login`, request.url);
-      return NextResponse.redirect(url);
-    }
+ 
   } else {
     console.log(`Path does not require authentication: ${pathname}`);
   }

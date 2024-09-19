@@ -1,65 +1,51 @@
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
+import { GetServerSideProps } from "next";
+
 import Head from "next/head";
-import dynamic from "next/dynamic";
-
-import { useNavigation } from "@/hooks/useRouter";
-
 
 import useTranslation from "next-translate/useTranslation";
 import loadTranslation from "next-translate/loadNamespaces";
 
-import CountrySelectorModel from '@/components/sss'
+import CountrySelectorModel from "@/components/sss";
 
-
-export default function Tattooartists({translations}) {
-  
-  const { router } = useNavigation();
-
-  const { t } = useTranslation("common", { i18n: translations });
+export default function Tattooartists() {
+  const { t } = useTranslation("common");
 
   return (
     <>
       <Head>
-      
         <meta name="robots" content="noindex, nofollow" />
-       
       </Head>
 
-      
-
       <section className="container_full mt_40 overlap_first">
+        <CountrySelectorModel />
 
-        <CountrySelectorModel/>
-        
-      
-   <p>{t("common:testme.content1")}</p>
-
-
-          
+        <p>{t("common:testme.content1")}</p>
       </section>
-
-  
     </>
   );
 }
 
-export async function getServerSideProps(context:any) {
+export const getServerSideProps: GetServerSideProps = async (context) => {
   const { locale } = context;
 
   try {
-    const translations = await loadTranslation("common", locale);
+    const translations = await loadTranslation({
+      locale: locale || "en", // Fallback to "en" if locale is undefined
+      namespaces: ["common"],
+    });
+
     return {
       props: {
         translations,
       },
     };
   } catch (error) {
+    console.error(error);
     return {
       props: {
-        translations: {}, 
+        translations: {},
       },
     };
   }
-}
+};

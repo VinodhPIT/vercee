@@ -1,10 +1,10 @@
 import React from "react";
-import { GetServerSideProps } from "next";
+// import { GetServerSideProps } from "next";
 
 import Head from "next/head";
 
 import useTranslation from "next-translate/useTranslation";
-import loadTranslation from "next-translate/loadNamespaces";
+// import loadTranslation from "next-translate/loadNamespaces";
 
 import CountrySelectorModel from "@/components/sss";
 
@@ -26,26 +26,26 @@ export default function Tattooartists() {
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  const { locale } = context;
+// export const getServerSideProps: GetServerSideProps = async (context) => {
+//   const { locale } = context;
 
-  try {
-    const translations = await loadTranslation({
-      locale: locale || "en", // Fallback to "en" if locale is undefined
-      namespaces: ["common"],
-    });
+//   try {
+//     const translations = await loadTranslation({
+//       locale: locale || "en", // Fallback to "en" if locale is undefined
+//       namespaces: ["common"],
+//     });
 
-    return {
-      props: {
-        translations,
-      },
-    };
-  } catch (error) {
-    console.error(error);
-    return {
-      props: {
-        translations: {},
-      },
-    };
-  }
-};
+//     return {
+//       props: {
+//         translations,
+//       },
+//     };
+//   } catch (error) {
+//     console.error(error);
+//     return {
+//       props: {
+//         translations: {},
+//       },
+//     };
+//   }
+// };

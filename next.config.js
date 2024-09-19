@@ -21,7 +21,7 @@ module.exports = nextTranslate({
         destination: "/finance",
       },
       {
-        source: "/tattoofinanzierung",
+        source: "/finanzeeeeee",
         destination: "/finance",
       },
       {
@@ -39,7 +39,7 @@ module.exports = nextTranslate({
         destination: "/forme",
       },
       {
-        source: "/tattoo-business",
+        source: "/business-mindeee",
         destination: "/forme",
       },
       {

@@ -1,12 +1,12 @@
 const pathTranslations = {
     "/finance": {
-      de: "/tattoofinanzierung",
+      de: "/finanzeeeeee",
       es: "/financiacion-de-tatuajes",
       en: "/finance",
       it: "/finanziamento-dei-tatuaggi",
     },
   
-    "/tattoofinanzierung": {
+    "/finanzeeeeee": {
       //de
       en: "/finance",
       es: "/financiacion-de-tatuajes",
@@ -16,14 +16,14 @@ const pathTranslations = {
     "/financiacion-de-tatuajes": {
       //es
       en: "/finance",
-      de: "/tattoofinanzierung",
+      de: "/finanzeeeeee",
       it: "/finanziamento-dei-tatuaggi",
     },
   
     "/finanziamento-dei-tatuaggi": {
       //it
       en: "/finance",
-      de: "/tattoofinanzierung",
+      de: "/finanzeeeeee",
       es: "/financiacion-de-tatuajes",
     },
   
@@ -56,13 +56,13 @@ const pathTranslations = {
     },
   
     "/forme": {
-      de: "/tattoo-business",
+      de: "/business-mindeee",
       es: "/explorar/negocio-de-tatuajes",
       en: "/forme",
       it: "/negozio-di-tatuaggi",
     },
   
-    "/tattoo-business": {
+    "/business-mindeee": {
       //de
       en: "/forme",
       es: "/explorar/negocio-de-tatuajes",
@@ -72,14 +72,14 @@ const pathTranslations = {
     "/explorar/negocio-de-tatuajes": {
       //es
       en: "/forme",
-      de: "/tattoo-business",
+      de: "/business-mindeee",
       it: "/negozio-di-tatuaggi",
     },
   
     "/negozio-di-tatuaggi": {
       //it
       en: "/forme",
-      de: "/tattoo-business",
+      de: "/business-mindeee",
       es: "/explorar/negocio-de-tatuajes",
     },
   

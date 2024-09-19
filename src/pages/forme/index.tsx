@@ -9,7 +9,7 @@ import loadTranslation from "next-translate/loadNamespaces";
 import CountrySelectorModel from "@/components/sss";
 
 export default function Tattooartists() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation();
 
   return (
     <>

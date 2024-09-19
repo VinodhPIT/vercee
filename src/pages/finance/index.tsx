@@ -14,7 +14,7 @@ interface KlarnaNewProps {
 }
 
 const KlarnaNew: React.FC<KlarnaNewProps> = () => {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation();
 
   return (
     <>

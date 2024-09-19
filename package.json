@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "next": "14.2.12",
+    "next-auth": "^4.24.7",
     "next-translate": "^2.6.2",
     "next-translate-plugin": "^2.6.2",
     "react": "^18",
